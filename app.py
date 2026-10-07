@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 from PyPDF2 import PdfReader
 import io
-
+api_key = st.secrets.get("GOOGLE_API_KEY", "")
 # Page configuration
 st.set_page_config(
     page_title="ATS Score Analyzer",
